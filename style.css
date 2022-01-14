@@ -100,10 +100,24 @@ header{
 }
 
 /* Popular Collection style */
-/* .collection-card{
+.product-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.collection-title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.collections{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-} */
+    justify-content: space-between;
+    grid-column-gap: 30px;
+    
+    
+
+}
 .collection{
     background-color: #ffffff;
     width: 329px;
@@ -141,7 +155,7 @@ header{
 .rate{
     font-family: 'Roboto',
     sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     color: #5E6366;
 }
