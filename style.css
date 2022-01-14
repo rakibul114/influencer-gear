@@ -55,6 +55,8 @@ header{
 /*---------------------------
     Main section styles
 ----------------------------*/
+/* Top banner styles */
+
 .main-title{
     font-size: 52px;
     color: #3A3A3A;
@@ -79,5 +81,22 @@ header{
 }
 .right-arrow{
     font-size: 24px;
+    font-weight:500;
     padding: 5px 5px;
 }
+
+/* Brand list style */
+.brands{
+    justify-content: center;
+}
+.brand-list{
+    border-top: 1px solid rgba(133, 133, 133, 0.247);
+    border-bottom: 1px solid rgba(133, 133, 133, 0.247);
+}
+.brand-list li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px 10px;    
+}
+
+/* Popular Collection style */
