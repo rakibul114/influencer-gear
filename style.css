@@ -100,16 +100,18 @@ header{
 }
 
 /* Popular Collection style */
+/* .collection-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+} */
 .collection{
     background-color: #ffffff;
     width: 329px;
-    height: 476px;
-    margin: 20px;    
+    height: 476px;        
     border-radius: 10px;
     padding: 10px 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-
 .product-title{
     color: #18191F;
     font-size: 28px;
@@ -130,20 +132,58 @@ header{
     font-size: 16px;
     
 }
-
 .fa-star.filled{
     color: #FB8200;
-
+}
+.fa-star-half-alt {
+    color: #FB8200;
 }
 .rate{
     font-family: 'Roboto',
     sans-serif;
     font-size: 14px;
-    font-weight: 700;    
+    font-weight: 700;
+    color: #5E6366;
 }
 .rating-description{
     font-family: 'Inter',
     sans-serif;
     font-size: 14px;
     font-weight: 700;
+    color: #787885;
+    line-height: 20px;    
 }
+
+
+/*---------------------------
+        Footer styles
+----------------------------*/
+footer{
+    background-color: #0A0826;
+    width: 100%;
+    height: 239px;
+    text-align: center;
+    padding: 30px 10px;
+    line-height: 40px;
+}
+.footer-title{
+    color:#ffffff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.footer-para{
+    font-family: 'Manrope',
+    sans-serif;
+    color: #D9DBE1;
+    font-size: 14px;
+    font-weight: 700;
+}
+.social-icon ul li{
+    display: inline-block;
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 20px;
+
+}
+
