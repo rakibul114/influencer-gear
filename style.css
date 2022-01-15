@@ -109,7 +109,7 @@ header{
     text-align: center;
     margin-bottom: 30px;
 }
-.collections{
+.collections{    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
@@ -285,7 +285,15 @@ footer{
          margin-top: 20px;
      }
      .collections{
-         flex-direction: column;
+         display: grid;
+         grid-template-columns: 1fr;         
+     }
+     .contact-form{
+         flex-direction: column;                 
+     }
+     .contacts{
+         margin: 0 auto;
+
      }
      
  }
