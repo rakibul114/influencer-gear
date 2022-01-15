@@ -21,7 +21,6 @@ body {
 }
 
 
-
 /*---------------------------
     Header section styles
 ----------------------------*/
@@ -227,10 +226,7 @@ textarea {
     font-size: 15px;
     font-weight: 700;
     border-radius: 5px;
-
 }
-
-
 
 /*---------------------------
         Footer styles
@@ -261,6 +257,36 @@ footer{
     color: #ffffff;
     margin: 0 10px;
     font-size: 20px;
-
 }
+
+/*----------------------
+    Media query styles
+ ---------------------*/
+ /* Mobile devices */
+ @media only screen and (max-width:688px) {
+     body {
+         background-color: #FB8200;
+     }     
+     .container {
+         flex-direction: column;
+         margin-top: 20px;
+         
+     }
+     .main-title{
+         font-size: 50px;         
+     }
+     .brand-list{
+         padding: 0px 20px;         
+         justify-content: center;
+         border: none;         
+     }
+     .main-camera img{
+         width: 300px;
+         margin-top: 20px;
+     }
+     .collections{
+         flex-direction: column;
+     }
+     
+ }
 
