@@ -66,12 +66,15 @@ body {
     }    
 }
 
-
+/*---------------------------
+    Main section styles
+----------------------------*/
 /* Top banner styles */
 .main-title {
     font-size: 52px;
     color: #3A3A3A;
 }
+
 .top-button {
     background-color: #E02C6D;
     padding: 10px 20px;
@@ -80,17 +83,19 @@ body {
     border: none;
     font-size: 16px;
     font-weight: 700;
-    color: #ffffff;    
+    color: #ffffff;
     cursor: pointer;
     position: absolute;
 }
+
 .top-button:hover {
     background-color: #ffffff;
     color: #E02C6D;
     border: 1px solid #E02C6D;
     transition: 1s;
 }
-.right-arrow{
+
+.right-arrow {
     font-size: 25px;
     font-weight: 800;
     padding: 15px 10px;
@@ -99,26 +104,30 @@ body {
 
 /* Top banner media query */
 @media only screen and (max-width: 600px) {
-    .header-container {
+    /* .header-container {
         display: flex;
         background: lightgray;
         flex-direction: column;
-    }
-    .top-banner{
+    } */
+
+    .top-banner {
         display: flex;
         display: block;
         justify-content: center;
         align-items: center;
-    }    
-    .main-title{
+    }
+
+    .main-title {
         font-size: 28px;
         text-align: center;
         margin: 20px 0;
     }
-    .top-content{
+
+    .top-content {
         font-size: 14px;
         text-align: center;
     }
+
     .top-button {
         background-color: #E02C6D;
         padding: 10px 20px;
@@ -129,25 +138,24 @@ body {
         font-weight: 700;
         color: #ffffff;
         cursor: pointer;
-        position: absolute;
-        justify-content: center;
+        position: relative;
+        margin-left: 50px;
     }
+
     .top-button:hover {
         background-color: #ffffff;
         color: #E02C6D;
         border: 1px solid #E02C6D;
-        transition: 1s;
+        transition: 1s;        
     }
-    .main-camera{
-        width: 20px;
-        margin-top: 40px;
-    }
-        
-}
 
-/*---------------------------
-    Main section styles
-----------------------------*/
+    .main-camera img{
+        width: 250px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+}
 
 /* Brand list style */
 .brands{
@@ -278,7 +286,9 @@ body {
 }
 .contacts{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);    
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;    
 }
 .contact{    
     background-color: #d9dbe198;
@@ -341,14 +351,17 @@ textarea {
     .contacts {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        justify-content: center;        
+        padding: 2% 10%;
+        align-items: center;
+        justify-content: space-between;
+               
     }
     
-    .contact {
+    .contact {        
         background-color: #d9dbe198;
         width: 150px;
         height: 150px;
-        margin: 10px 10px;
+        margin-left: 20px;
         text-align: center;
         padding: 35px 10px;
         border-radius: 5px;        
@@ -364,7 +377,7 @@ textarea {
 ----------------------------*/
 footer{
     background-color: #0A0826;
-    width: 100%;
+    /* width: 100%; */
     height: 239px;
     text-align: center;
     padding: 30px 10px;
@@ -390,10 +403,7 @@ footer{
     font-size: 20px;
 }
 
-/*----------------------
-    Media query styles
- ---------------------*/
- /* Mobile devices */
+
  
      
 
