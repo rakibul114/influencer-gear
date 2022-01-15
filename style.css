@@ -179,13 +179,14 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+}
+.contact-us{
+    margin-top: 20px;
 }
 .contacts{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    z-index: 2;
-    margin-left: 40px;
+    grid-template-columns: repeat(2, 1fr);    
 }
 .contact{    
     background-color: #d9dbe198;
@@ -201,22 +202,32 @@ header{
     color:#5E6366;
 }
 .form{
-    background-color: #78788556;
+    background-color: #d9dbe198;
     width: 500px;
     height: 420px;    
     text-align: center;
-    border-radius: 5px;
-    z-index: 1;
+    border-radius: 5px;   
     outline: none;
     margin-left: 10px;
 }
 
-input[type=text], email,
+input[type="text"],
+input[type="email"],
+input[type="button"],
 textarea {
-    width: 50%;
-    padding: 5px 10px;
-    
+    width: 60%;
+    padding: 5px 8px;
+    margin: 5px 0;
+    outline: none;
 }
+.send-button{
+    background-color: #E02C6D;
+    border: none;
+    padding: 8px 15px;
+    color: #ffffff;
+
+}
+
 
 
 /*---------------------------
