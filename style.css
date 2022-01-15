@@ -63,8 +63,7 @@ body {
         display: block;
         justify-content: center;
         text-align: center;
-    }
-    
+    }    
 }
 
 
@@ -106,8 +105,10 @@ body {
         flex-direction: column;
     }
     .top-banner{
-        flex-direction: column;
+        display: flex;
+        display: block;
         justify-content: center;
+        align-items: center;
     }    
     .main-title{
         font-size: 28px;
@@ -138,7 +139,8 @@ body {
         transition: 1s;
     }
     .main-camera{
-        width: 50px;
+        width: 20px;
+        margin-top: 40px;
     }
         
 }
@@ -349,8 +351,7 @@ textarea {
         margin: 10px 10px;
         text-align: center;
         padding: 35px 10px;
-        border-radius: 5px;
-        
+        border-radius: 5px;        
     }
     .contact h4, p{
         font-size: 12px;
