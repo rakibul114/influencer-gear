@@ -51,13 +51,20 @@ body {
 /* Navigation media query */
 @media only screen and (max-width: 600px) {
     .header-container {
+        display: flex;
         background: lightgray;
         flex-direction: column;
     }
-    .navbar{
-        flex-direction: column;
-        padding-top: 20px;        
+    .top-title{
+        font-size: 16px;
+        margin-top: 20px;
     }
+    .navbar{
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    
 }
 
 
@@ -93,6 +100,11 @@ body {
 
 /* Top banner media query */
 @media only screen and (max-width: 600px) {
+    .header-container {
+        display: flex;
+        background: lightgray;
+        flex-direction: column;
+    }
     .top-banner{
         flex-direction: column;
         justify-content: center;
@@ -106,13 +118,34 @@ body {
         font-size: 14px;
         text-align: center;
     }
-    
+    .top-button {
+        background-color: #E02C6D;
+        padding: 10px 20px;
+        border-radius: 50px;
+        margin-top: 20px;
+        border: none;
+        font-size: 16px;
+        font-weight: 700;
+        color: #ffffff;
+        cursor: pointer;
+        position: absolute;
+        justify-content: center;
+    }
+    .top-button:hover {
+        background-color: #ffffff;
+        color: #E02C6D;
+        border: 1px solid #E02C6D;
+        transition: 1s;
+    }
+    .main-camera{
+        width: 50px;
+    }
+        
 }
 
 /*---------------------------
     Main section styles
 ----------------------------*/
-
 
 /* Brand list style */
 .brands{
@@ -127,6 +160,21 @@ body {
     list-style: none;
     display: inline-block;
     padding: 20px 10px;    
+}
+/* Top banner media query */
+@media only screen and (max-width: 600px){
+    .brands{
+                
+    }
+    .brand-list li{
+        display: inline-block;
+        border: none;        
+    }
+    .brand-list li img{
+        flex-direction: row;
+        width: 60px;
+        justify-content: center;
+    }
 }
 
 /* Popular Collection style */
@@ -145,6 +193,7 @@ body {
     justify-content: space-between;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
+    
 }
 .collection{
     background-color: #ffffff;
@@ -153,6 +202,7 @@ body {
     border-radius: 10px;
     padding: 10px 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 20px 0;
 }
 .product-title{
     color: #18191F;
@@ -201,8 +251,20 @@ body {
     font-weight: 700;
     margin: 30px 0;    
 }
+/* Popular Collection media query */
+@media only screen and (max-width: 600px){
+    .product-card{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .collections{
+        display: block;
+    }
+}
 
 /* Contact form styles*/
+
 .contact-form{
     display: flex;
     justify-content: center;
@@ -256,6 +318,44 @@ textarea {
     font-size: 15px;
     font-weight: 700;
     border-radius: 5px;
+}
+/* Popular Collection media query */
+@media only screen and (max-width: 600px){
+    .contact-form{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    
+    .form {
+        background-color: #d9dbe198;
+        width: 350px;
+        height: 420px;
+        text-align: center;
+        border-radius: 5px;
+        outline: none;
+        margin: 20px 60px;
+    }
+    .contacts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;        
+    }
+    
+    .contact {
+        background-color: #d9dbe198;
+        width: 150px;
+        height: 150px;
+        margin: 10px 10px;
+        text-align: center;
+        padding: 35px 10px;
+        border-radius: 5px;
+        
+    }
+    .contact h4, p{
+        font-size: 12px;
+    }
+        
 }
 
 /*---------------------------
