@@ -3,6 +3,7 @@
 /* ------------------------
 Common styles or utilities
 ----------------------------*/
+
 *{
     margin: 0;
     padding: 0;
@@ -24,11 +25,7 @@ body {
 /*---------------------------
     Header section styles
 ----------------------------*/
-header{
-    width: 100%;    
-}
-
-.header-title{
+.top-title{
     font-size: 24px;
     color: #3A3A3A;
 }
@@ -43,7 +40,6 @@ header{
     margin: 10px;
     align-items: center;    
 }
-
 .navigation-list li a{
     text-decoration: none;
     font-size: 16px;
@@ -52,36 +48,65 @@ header{
 .top-icons {
     width: 24px;    
 }
+/* Navigation media query */
+@media only screen and (max-width: 600px) {
+    .header-container {
+        background: lightgray;
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        padding-top: 20px;        
+    }
+}
+
 
 /* Top banner styles */
-
 .main-title {
     font-size: 52px;
     color: #3A3A3A;
 }
-
-.align-button {
-    position: absolute;
-}
-
-.main-button {
+.top-button {
     background-color: #E02C6D;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border-radius: 50px;
     margin-top: 20px;
     border: none;
     font-size: 16px;
     font-weight: 700;
-    color: #ffffff;
-    position: relative;
+    color: #ffffff;    
     cursor: pointer;
+    position: absolute;
 }
-
-.main-button:hover {
+.top-button:hover {
     background-color: #ffffff;
     color: #E02C6D;
     border: 1px solid #E02C6D;
     transition: 1s;
+}
+.right-arrow{
+    font-size: 25px;
+    font-weight: 800;
+    padding: 15px 10px;
+    position: relative;
+}
+
+/* Top banner media query */
+@media only screen and (max-width: 600px) {
+    .top-banner{
+        flex-direction: column;
+        justify-content: center;
+    }    
+    .main-title{
+        font-size: 28px;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .top-content{
+        font-size: 14px;
+        text-align: center;
+    }
+    
 }
 
 /*---------------------------
@@ -268,37 +293,6 @@ footer{
     Media query styles
  ---------------------*/
  /* Mobile devices */
- @media only screen and (max-width:688px) {
-     body {
-         background-color: #FB8200;
-     }     
-     .container {
-         flex-direction: column;
-         margin-top: 20px;
-         
-     }
-     .main-title{
-         font-size: 50px;         
-     }
-     .brand-list{
-         padding: 0px 20px;         
-         justify-content: center;
-         border: none;         
-     }
-     .main-camera img{
-         width: 300px;
-         margin-top: 20px;
-     }
-     .collections{
-         display: grid;
-         grid-template-columns: 1fr;         
-     }
-     .contact-form{
-         flex-direction: column;                 
-     }
-     .contacts{
-         margin: 0 auto;
-     }
+ 
      
- }
 
