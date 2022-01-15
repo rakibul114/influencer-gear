@@ -114,6 +114,7 @@ header{
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     grid-column-gap: 30px;
+    grid-row-gap: 30px;
     
     
 
