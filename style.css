@@ -53,36 +53,41 @@ header{
     width: 24px;    
 }
 
-/*---------------------------
-    Main section styles
-----------------------------*/
 /* Top banner styles */
 
-.main-title{
+.main-title {
     font-size: 52px;
     color: #3A3A3A;
 }
-.align-button{
+
+.align-button {
     position: absolute;
 }
-.main-button{
+
+.main-button {
     background-color: #E02C6D;
     padding: 10px 15px;
     border-radius: 50px;
     margin-top: 20px;
     border: none;
     font-size: 16px;
-    font-weight:700;
+    font-weight: 700;
     color: #ffffff;
     position: relative;
-    cursor: pointer;        
+    cursor: pointer;
 }
-.main-button:hover{
+
+.main-button:hover {
     background-color: #ffffff;
     color: #E02C6D;
     border: 1px solid #E02C6D;
     transition: 1s;
 }
+
+/*---------------------------
+    Main section styles
+----------------------------*/
+
 
 /* Brand list style */
 .brands{
@@ -293,7 +298,6 @@ footer{
      }
      .contacts{
          margin: 0 auto;
-
      }
      
  }
